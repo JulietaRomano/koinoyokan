@@ -625,7 +625,23 @@ footer{
 
 /*RESPONSIVE*/
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
+      /*Portada*/
+  
+
+    .portada{
+        background-position:center;
+        // height: 100vh;
+        // padding-top: 2rem;
+        height:90vh;
+    }
+    video{
+       display: none;
+    }
+        /*Instagram*/
+        .container{
+            overflow: hidden;
+        }
     .menu-itemContainer {
         width: 8rem;
     }
@@ -641,6 +657,10 @@ footer{
 
 @media screen and (max-width: 810px) {
     *{font-size: 14px;}
+    /*cursor*/
+    .cursor {
+        display: none;
+    }
     /*Menu*/
     .menu{
         background-color: rgb(255, 255, 255);
@@ -665,12 +685,8 @@ footer{
     }
 
     /*portada*/
-    video{
-        display: none;
-    }
     .portada {
-        // background-position: -23.4375rem 0px;
-        background-position:center;
+        background-position: 47%;
         height: 80vh;
     }
     /*novedades*/
@@ -715,10 +731,7 @@ footer{
         }
     }
 
-    /*Instagram*/
-    .container{
-        overflow: hidden;
-    }
+
     /*Tour*/
     .tour-item {
         width: 80%;

@@ -625,7 +625,19 @@ footer p {
 }
 
 /*RESPONSIVE*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
+  /*Portada*/
+  .portada {
+    background-position: center;
+    height: 90vh;
+  }
+  video {
+    display: none;
+  }
+  /*Instagram*/
+  .container {
+    overflow: hidden;
+  }
   .menu-itemContainer {
     width: 8rem;
   }
@@ -640,6 +652,10 @@ footer p {
 @media screen and (max-width: 810px) {
   * {
     font-size: 14px;
+  }
+  /*cursor*/
+  .cursor {
+    display: none;
   }
   /*Menu*/
   .menu {
@@ -662,11 +678,8 @@ footer p {
     width: 30%;
   }
   /*portada*/
-  video {
-    display: none;
-  }
   .portada {
-    background-position: center;
+    background-position: 47%;
     height: 80vh;
   }
   /*novedades*/
@@ -705,10 +718,6 @@ footer p {
   }
   .spotify_section .spotify_textYflecha img {
     display: none;
-  }
-  /*Instagram*/
-  .container {
-    overflow: hidden;
   }
   /*Tour*/
   .tour-item {
