@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <!-- Meta tags esenciales -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koino Yokan - Página Oficial</title>
 
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <!-- Fuentes y estilos externos -->
     <link rel="stylesheet" href="https://use.typekit.net/oco6wcr.css">
     <link rel="stylesheet" href="css/main.css">
+
 </head>
 <body>
       <!-- Cursor personalizado -->
@@ -52,8 +56,8 @@
     <!-- Contenido principal -->
     <main class="fondo">
             <!--Novedades-->
-            <div class="novedades">
-                <h2 class="novedades_title">Novedades</h2>
+            <div class="novedades" data-aos="flip-up">
+                <h2 class="novedades_title" >Novedades</h2>
                  <div class="novedades_carousel">
                     <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kzOQ_2ZbKZc?si=xlfddPOp7j5dcYme" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
                  </div>
@@ -64,8 +68,8 @@
                 <h2 class="yokaners_title">Nosotros</h2>
                 <div class="nosotros_container1">
                     
-                    <img class="img1" src="assets/img/tomy.png" alt="">
-                    <div class="texto">
+                    <img class="img1" data-aos="zoom-in-right" src="assets/img/tomy.png" alt="">
+                    <div class="texto" data-aos="zoom-in">
                         <p>Somos Jere y Tomy y juntos formamos Koino Yokan.  Comenzamos nuestro camino en la música haciendo covers de rock argentino y luego nos animamos a componer nuestra propia música. <br>
                             Nos encanta crear atmósferas envolventes, llenas de guitarras etéreas y letras que hablan desde lo más profundo. <br>
                         </p>   
@@ -73,19 +77,19 @@
                 </div>    
 
                 <div class="nosotros_container1">
-                    <div class="texto">
+                    <div class="texto" data-aos="zoom-in">
                         <p>    
                          El nombre de la banda, que en japonés significa "la premonición del amor", refleja ese presentimiento de emociones intensas e inevitables que queremos que sientan cuando nos escuchan.<br>
                         Este espacio es tanto nuestro como de ustedes. Nos apasiona compartir este viaje musical con todos los que nos acompañan. <br>
                         <b>¡Gracias por estar acá y formar parte de esta comunidad!</b></p>
                     </div>
-                    <img class="img2" src="assets/img/jere.png" alt="">
+                    <img class="img2" data-aos="zoom-in" src="assets/img/jere.png" alt="">
                 </div>
             </div>
 
             <!--Playlist-->
             <div class="spotify_section">
-                <div class="spotify_text">
+                <div class="spotify_text" data-aos="flip-up">
                     <div class="spoty_texto">
                          <p class="spotify_p1">Una playlist</p>
                         <p class="spotify_p2">creada para vos</p>
@@ -95,20 +99,20 @@
                         <img src="assets/img/flecha2.png" alt="">
                     </div>
                 </div>
-                <div class="spotify_div">
+                <div class="spotify_div" data-aos="zoom-in-up">
                     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO1KeZjA?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
             </div>
 
             <!-- Sección Yokaners (Fans) -->
 
-            <div class="yokaners">
+            <div class="yokaners" data-aos="fade-up">
                 <h2 class="yokaners_title">Yokaners</h2>
-                <p>Únete a otros fans, comparte tu pasión, descubre novedades exclusivas y <br>
+                <p data-aos="fade-up">Únete a otros fans, comparte tu pasión, descubre novedades exclusivas y <br>
                     participa en consignas para ganar increíbles premios. <br>
                 </p>
-                <p class="span">¡Tu lugar en el universo de Koino te espera, solo faltas tú!<p>
-                <img src="assets/img/flecha1.png" alt="">
+                <p class="span" data-aos="fade-up">¡Tu lugar en el universo de Koino te espera, solo faltas tú!<p>
+                <img  data-aos="zoom-in-up" src="assets/img/flecha1.png" alt="">
             </div>
 
 
@@ -176,13 +180,15 @@
             </article>
         </div>
 
-        <div class="boton_container">
+        <div class="boton_container" data-aos="fade-up">
                 <div class="boton">
                 Ir a la comunidad
                 </div>    
         </div>
+
+        <!--Tour-->
         
-        <section class="tour">
+        <section class="tour"  data-aos="fade-up">
             <img src="assets/img/tour.png" alt="">
 
             <div class="tour-item tour-item1">
@@ -207,7 +213,7 @@
                 <p class="span">Teatro Gran Rex</p>
                 <p>Buenos Aires</p>
             </div>
-            <div class="boton_container">
+            <div class="boton_container" data-aos="fade-up">
                 <div class="boton">
                 Comprar Entradas
                 </div>    
@@ -248,7 +254,15 @@
         });
 
     </script>
+    <!--GSAP-->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="js/script.js"></script>
+
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    
 </body>
 </html>

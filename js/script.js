@@ -1,3 +1,5 @@
+AOS.init();
+
 /*Cursor*/ 
 gsap.set(".cursor", { force3D: true });
 document.addEventListener("mousemove", (e) => {
