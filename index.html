@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags esenciales -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koino Yokan - Página Oficial</title>
+
+    <!-- Fuentes y estilos externos -->
+    <link rel="stylesheet" href="https://use.typekit.net/oco6wcr.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+      <!-- Cursor personalizado -->
+    <div class="cursor"></div>
+      <!-- Sección de portada con el menú y el video de fondo -->
+    <header class="portada">
+        <!-- Navegación principal -->
+        <nav class="menu">
+            <li class="menu-item">
+                <img src="assets/img/logoKoino2.png" alt="">
+            </li>
+            <div class="menu-itemContainer">
+                <li class="menu-item inicio">
+                    <a href="" class="inicioa">Inicio</a>
+                </li>
+                <li class="menu-item">
+                    <a href="https://maiteperdiguero.website/koinoyokan/" class="comunidad">Comunidad</a>
+                </li>
+            </div>
+            <!--Menu Responsive-->
+            <div class="responsive_hamburguesa">
+                <div class="menu-hamburguesa" id="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                 <nav id="menuresp" class="menuresp">
+                    <ul>
+                        <li class="liresp"><a href="#inicio">Inicio</a></li>
+                        <li><a href="#comunidad">Comunidad</a></li>
+                    </ul>
+                </nav> 
+            </div>
+        </nav>
+        <!-- Portada -->
+        <video autoplay="" muted="" loop="">
+            <source src="assets/img/video.mp4" type="video/mp4">
+        </video>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="fondo">
+            <!--Novedades-->
+            <div class="novedades">
+                <h2 class="novedades_title">Novedades</h2>
+                 <div class="novedades_carousel">
+                    <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kzOQ_2ZbKZc?si=xlfddPOp7j5dcYme" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                 </div>
+            </div>
+
+            <!--Quienes somos-->
+            <div class="nosotros">
+                <h2 class="yokaners_title">Nosotros</h2>
+                <div class="nosotros_container1">
+                    
+                    <img class="img1" src="assets/img/tomy.png" alt="">
+                    <div class="texto">
+                        <p>Somos Jere y Tomy y juntos formamos Koino Yokan.  Comenzamos nuestro camino en la música haciendo covers de rock argentino y luego nos animamos a componer nuestra propia música. <br>
+                            Nos encanta crear atmósferas envolventes, llenas de guitarras etéreas y letras que hablan desde lo más profundo. <br>
+                        </p>   
+                    </div>
+                </div>    
+
+                <div class="nosotros_container1">
+                    <div class="texto">
+                        <p>    
+                         El nombre de la banda, que en japonés significa "la premonición del amor", refleja ese presentimiento de emociones intensas e inevitables que queremos que sientan cuando nos escuchan.<br>
+                        Este espacio es tanto nuestro como de ustedes. Nos apasiona compartir este viaje musical con todos los que nos acompañan. <br>
+                        <b>¡Gracias por estar acá y formar parte de esta comunidad!</b></p>
+                    </div>
+                    <img class="img2" src="assets/img/jere.png" alt="">
+                </div>
+            </div>
+
+            <!--Playlist-->
+            <div class="spotify_section">
+                <div class="spotify_text">
+                    <div class="spoty_texto">
+                         <p class="spotify_p1">Una playlist</p>
+                        <p class="spotify_p2">creada para vos</p>
+                    </div>
+                    <div class="spotify_textYflecha">
+                        <p>¡¡No te la podes perder!!</p>
+                        <img src="assets/img/flecha2.png" alt="">
+                    </div>
+                </div>
+                <div class="spotify_div">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO1KeZjA?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <!-- Sección Yokaners (Fans) -->
+
+            <div class="yokaners">
+                <h2 class="yokaners_title">Yokaners</h2>
+                <p>Únete a otros fans, comparte tu pasión, descubre novedades exclusivas y <br>
+                    participa en consignas para ganar increíbles premios. <br>
+                </p>
+                <p class="span">¡Tu lugar en el universo de Koino te espera, solo faltas tú!<p>
+                <img src="assets/img/flecha1.png" alt="">
+            </div>
+
+
+        <!-- Carrusel e Instagram -->
+        <div class="container">
+            <aside class="carousel">
+                <!-- Carrusel de imágenes de los fans -->
+                <div class="carousel__wrapper">
+                    <div class="item" id="slide-0">
+                        <img src="assets/img/yokaner1.png" alt="" width="418" height="418">
+                    </div>
+                    <div class="item" id="slide-1">
+                        <img src="assets/img/yokaner2.png" alt="" width="418" height="418">
+                    </div>
+                    <div class="item" id="slide-2">
+                        <img src="assets/img/yokaner3.png" alt="" width="418" height="418">
+                    </div>
+                    <div class="item" id="slide-3">
+                        <img src="assets/img/yokaner4.png" alt="" width="418" height="418">
+                    </div>
+                    <div class="item" id="slide-4">
+                        <img src="assets/img/yokaner1.png" alt="" width="418" height="418">
+                    </div>
+                    <div class="item" id="slide-5">
+                        <img src="assets/img/yokaner2.png" alt="" width="418" height="418">
+                    </div>
+                    <div class="item" id="slide-6">
+                        <img src="assets/img/yokaner3.png" alt="" width="418" height="418">
+                    </div>
+                </div>
+            </aside>
+            <!-- Simulación de un post de Instagram -->
+            <article class="instagram">
+                <header class="instagram__header">
+                    <figure>
+                        <img src="assets/img/insta_logo.png" alt="Jake Dog" width="42" height="42">
+                        <figcaption>
+                            <h4>koino.yokan.oficial</h4>
+                        </figcaption>
+                    </figure>
+                </header>
+    
+                <section class="instagram__media">
+                    <div class="img"></div>
+                </section>
+    
+                <div class="instagram__buttons">
+                    <div class="left">
+                        <svg class="instagram__icon instagram__icon--heart" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M16.8196 3.40477L16.8196 3.40468L16.8105 3.40435C15.9939 3.37401 15.1837 3.55848 14.4607 3.93934C13.7415 4.31818 13.1337 4.87813 12.6974 5.56376C12.3799 6.0141 12.1595 6.38237 12.0011 6.66645C11.841 6.38254 11.6182 6.01451 11.2971 5.5646C10.8588 4.88294 10.252 4.32584 9.53521 3.94728C8.81455 3.56666 8.00746 3.37954 7.19284 3.40423L7.19283 3.40408L7.18038 3.40477C5.73422 3.48471 4.37827 4.133 3.40801 5.20836C2.44041 6.28078 1.93462 7.69124 1.99999 9.13385C2.00344 10.8131 2.73878 12.1587 3.76066 13.3486C4.54375 14.2605 5.52952 15.1172 6.516 15.9745C6.80035 16.2216 7.08476 16.4688 7.36439 16.7173C7.71256 17.0283 8.0484 17.3289 8.36875 17.6156C9.03981 18.2163 9.64287 18.7561 10.1488 19.2024C10.8808 19.8482 11.4505 20.3358 11.7281 20.5156L11.9996 20.6915L12.2713 20.516C12.5291 20.3494 13.0097 19.9415 13.7041 19.3303C14.2257 18.8712 14.8883 18.2789 15.7018 17.5517C15.9935 17.2909 16.3047 17.0128 16.6357 16.7172C16.9253 16.4597 17.2205 16.2037 17.5157 15.9477C18.4876 15.105 19.4601 14.2617 20.2346 13.3628C21.2586 12.1744 21.9965 10.8264 22 9.13385C22.0653 7.69123 21.5596 6.28078 20.592 5.20836C19.6217 4.133 18.2657 3.48471 16.8196 3.40477ZM11.6142 4.35506L11.9954 4.80294L12.3761 4.35467C12.9155 3.71951 13.5913 3.21422 14.3531 2.87644C15.1144 2.53889 15.9419 2.37731 16.7742 2.40369C18.4866 2.47112 20.1027 3.21362 21.2694 4.46897C22.4364 5.72476 23.0588 7.39158 23.0003 9.10494L23 9.11347V9.122C23 12.4787 20.5608 14.6294 18.1924 16.6842C17.8966 16.94 17.598 17.2003 17.3031 17.462L17.3018 17.4632L16.3798 18.2872L16.3736 18.2927L16.3676 18.2985C15.2327 19.3827 14.0415 20.4065 12.7991 21.3656C12.5599 21.5162 12.2829 21.5962 12 21.5962C11.7171 21.5962 11.4402 21.5162 11.201 21.3657C9.9972 20.4352 8.84189 19.4436 7.73965 18.3948L7.73401 18.3894L7.7282 18.3842L6.7012 17.4662L6.70057 17.4657C6.43759 17.2314 6.17305 17.0015 5.91337 16.7758C5.88988 16.7554 5.86643 16.735 5.84303 16.7147C3.34442 14.5424 0.999982 12.4694 0.999982 9.122V9.11347L0.999691 9.10494C0.941196 7.39158 1.56352 5.72476 2.73058 4.46897C3.89709 3.21378 5.51295 2.47131 7.2251 2.40372C8.0557 2.37962 8.88112 2.54227 9.6405 2.87968C10.4006 3.21742 11.0751 3.72163 11.6142 4.35506Z" />
+                        </svg>
+                        <svg class="instagram__icon instagram__icon--comment" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M20.656 17.008C21.8711 14.9061 22.2795 12.4337 21.8048 10.0527C21.3301 7.67172 20.0048 5.54497 18.0765 4.06978C16.1482 2.59458 13.7488 1.87186 11.3266 2.0366C8.9043 2.20135 6.62486 3.24231 4.91408 4.96501C3.20329 6.68772 2.17817 8.97432 2.03024 11.3977C1.8823 13.821 2.62166 16.2153 4.1102 18.1334C5.59874 20.0514 7.73463 21.3619 10.1189 21.82C12.5031 22.2782 14.9726 21.8527 17.066 20.623L22 22L20.656 17.008Z" />
+                        </svg>
+                        <svg class="instagram__icon instagram__icon--message" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M22 3 9.218 10.083M11.698 20.334 22 3.001H2L9.218 10.084 11.698 20.334Z" />
+                        </svg>
+                    </div>
+                    <div class="right">
+                        <svg class="instagram__icon instagram__icon--saved" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M20 21L12 13.44L4 21V3H20V21Z" />
+                        </svg>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="boton_container">
+                <div class="boton">
+                Ir a la comunidad
+                </div>    
+        </div>
+        
+        <section class="tour">
+            <img src="assets/img/tour.png" alt="">
+
+            <div class="tour-item tour-item1">
+                <p>23.11.24</p>
+                <p class="span">Teatro Gran Rex</p>
+                <p>Buenos Aires</p>
+            </div>
+
+            <div class="tour-item tour-item2">
+                <p>23.11.24</p>
+                <p class="span">Teatro Gran Rex</p>
+                <p>Buenos Aires</p>
+            </div>
+            <div class="tour-item tour-item1">
+                <p>23.11.24</p>
+                <p class="span">Teatro Gran Rex</p>
+                <p>Buenos Aires</p>
+            </div>
+
+            <div class="tour-item tour-item2">
+                <p>23.11.24</p>
+                <p class="span">Teatro Gran Rex</p>
+                <p>Buenos Aires</p>
+            </div>
+            <div class="boton_container">
+                <div class="boton">
+                Comprar Entradas
+                </div>    
+            </div>
+        </section>
+
+    </main>
+    <!-- Footer -->
+    <footer>
+        <img src="assets/img/logoKoino.png" alt="">
+        <p>
+            © 2024 Koino Yokan. ALL RIGHTS RESERVED.
+        </p>
+        <div class="redes">
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M9.99805,3c-3.859,0 -6.99805,3.14195 -6.99805,7.00195v10c0,3.859 3.14195,6.99805 7.00195,6.99805h10c3.859,0 6.99805,-3.14195 6.99805,-7.00195v-10c0,-3.859 -3.14195,-6.99805 -7.00195,-6.99805zM22,7c0.552,0 1,0.448 1,1c0,0.552 -0.448,1 -1,1c-0.552,0 -1,-0.448 -1,-1c0,-0.552 0.448,-1 1,-1zM15,9c3.309,0 6,2.691 6,6c0,3.309 -2.691,6 -6,6c-3.309,0 -6,-2.691 -6,-6c0,-3.309 2.691,-6 6,-6zM15,11c-2.20914,0 -4,1.79086 -4,4c0,2.20914 1.79086,4 4,4c2.20914,0 4,-1.79086 4,-4c0,-2.20914 -1.79086,-4 -4,-4z"></path></g></g>
+                </svg>
+            </a>
+            <a href="" >
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M15,3c-6.6,0 -12,5.4 -12,12c0,6.6 5.4,12 12,12c6.6,0 12,-5.4 12,-12c0,-6.6 -5.4,-12 -12,-12zM19.731,21c-0.22,0 -0.33,-0.11 -0.55,-0.22c-1.65,-0.991 -3.74,-1.54 -5.94,-1.54c-1.21,0 -2.53,0.22 -3.63,0.44c-0.22,0 -0.44,0.11 -0.55,0.11c-0.44,0 -0.77,-0.33 -0.77,-0.77c0,-0.44 0.22,-0.77 0.66,-0.77c1.43,-0.33 2.861,-0.55 4.401,-0.55c2.53,0 4.84,0.66 6.82,1.76c0.22,0.22 0.44,0.33 0.44,0.77c-0.222,0.55 -0.552,0.77 -0.881,0.77zM20.94,17.921c-0.22,0 -0.44,-0.11 -0.66,-0.22c-1.87,-1.21 -4.511,-1.87 -7.37,-1.87c-1.43,0 -2.751,0.22 -3.74,0.44c-0.22,0.11 -0.33,0.11 -0.55,0.11c-0.55,0 -0.881,-0.44 -0.881,-0.881c0,-0.55 0.22,-0.77 0.77,-0.991c1.32,-0.33 2.641,-0.66 4.511,-0.66c3.08,0 5.94,0.77 8.361,2.2c0.33,0.22 0.55,0.55 0.55,0.881c-0.111,0.55 -0.44,0.991 -0.991,0.991zM22.37,14.4c-0.22,0 -0.33,-0.11 -0.66,-0.22c-2.2,-1.21 -5.39,-1.98 -8.47,-1.98c-1.54,0 -3.19,0.22 -4.621,0.55c-0.22,0 -0.33,0.11 -0.66,0.11c-0.66,0.111 -1.1,-0.44 -1.1,-1.099c0,-0.659 0.33,-0.991 0.77,-1.1c1.761,-0.441 3.631,-0.661 5.611,-0.661c3.41,0 6.93,0.77 9.681,2.2c0.33,0.22 0.66,0.55 0.66,1.1c-0.11,0.66 -0.551,1.1 -1.211,1.1z"></path></g></g>
+                </svg>
+            </a>
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M44.89844,14.5c-0.39844,-2.19922 -2.29687,-3.80078 -4.5,-4.30078c-3.29687,-0.69922 -9.39844,-1.19922 -16,-1.19922c-6.59766,0 -12.79687,0.5 -16.09766,1.19922c-2.19922,0.5 -4.10156,2 -4.5,4.30078c-0.40234,2.5 -0.80078,6 -0.80078,10.5c0,4.5 0.39844,8 0.89844,10.5c0.40234,2.19922 2.30078,3.80078 4.5,4.30078c3.5,0.69922 9.5,1.19922 16.10156,1.19922c6.60156,0 12.60156,-0.5 16.10156,-1.19922c2.19922,-0.5 4.09766,-2 4.5,-4.30078c0.39844,-2.5 0.89844,-6.10156 1,-10.5c-0.20312,-4.5 -0.70312,-8 -1.20312,-10.5zM19,32v-14l12.19922,7z"></path></g></g>
+                </svg>
+            </a>
+        </div>
+       
+    </footer>
+    <script>
+        let CHECKED = false;
+        document.addEventListener("pointerdown", (e) => {
+        CHECKED = !CHECKED;
+        document.documentElement.style.setProperty("--light", CHECKED ? 1 : 0);
+        });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
