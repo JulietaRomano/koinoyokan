@@ -16,13 +16,7 @@ a{
     }
 /*Cursor*/
 
-:root {
-    --blue: #01266c;
-    --gold: #f7c505;
-    --yellow: #fbdc74;
-    --skyblue: #0071fb;
-    --black: #1a1a1a;
-  }
+
   .fondo{
     background-image: url(../assets/img/fondo1.png);
     background-size: cover;
@@ -39,6 +33,7 @@ a{
     left: 0;
     will-change: transform;
     pointer-events: none;
+    z-index: 100;
   }
   
   
@@ -88,7 +83,6 @@ a{
 }
 
 /*Novedades*/
-
 
 .novedades{
     padding:8rem 0rem;
@@ -210,15 +204,80 @@ align-items: center;
     padding: 3rem 0;
 }
 
-.boton{
-    padding:.8rem 2.8rem;
-    background-color: rgb(255, 0, 76);
-    display: inline-block;
+$brown: #343434;
+$angle: 8px;
+$angle-o: 4px;
+
+.btn {
+  font-size: 1.3rem;
+  top: 0;
+  left: 0;
+  transition: all 0.15s linear 0s;
+  position: relative;
+  padding: 0.8rem 2.8rem;
+  background-color: #C26148;
+  display: inline-block;
+  border-radius: 30px;
+  color: white;
+  border: solid 1px black;
+  text-decoration: none;
+  // Sombra hacia la derecha
+  box-shadow: 6px 6px 0 $brown;
+
+  &:hover {
+    top: 2px;
+    left: 2px;
     border-radius: 30px;
-    color: white;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    box-shadow: 4px 4px 0 $brown;
+  }
+
+  &::after,
+  &::before {
+    transition: all 0.15s linear 0s;
+    content: '';
+    position: absolute;
+    width: $angle;
+    height: $angle;
+    background-color: $brown;
+    transform: rotate(45deg);
+    z-index: -1;
+    border-radius: 30px;
+  }
+
+  &::after {
+    top: 10px;
+    left: 4px;
+  }
+
+  &::before {
+    bottom: -4px;
+    right: 4px;
+  }
 }
 
+a.btn {
+  position: relative;
+}
+
+a:active.btn {
+  top: 4px;
+  left: 4px;
+  box-shadow: 2px 2px 0 $brown;
+
+  &::before {
+    bottom: -2px;
+    right: 2px;
+  }
+
+  &::after {
+    top: 8px;
+    left: 2px;
+  }
+}
+
+
+
+/* TOUR*/
 
 .tour{
     margin-top: 10rem;
